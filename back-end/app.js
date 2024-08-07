@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const adminRoutes = require('./routes/admin');
-const connectDB = require('./db/connection')
+const connectDB = require('./db/connect')
 const usersRoutes = require('./routes/users');
 const cors = require('cors');
 

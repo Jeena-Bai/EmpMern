@@ -19,7 +19,7 @@ const EmployeeNavbar = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" color="secondary">
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           Employee App

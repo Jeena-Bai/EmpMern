@@ -48,7 +48,7 @@ const Login = ({ onLogin }) => {
   return (
     <Card sx={{ maxWidth: 400, margin: 'auto', mt: 8, p: 2 }}>
       <CardContent>
-        <Typography variant="h5" component="h2" gutterBottom>
+        <Typography variant="h5" component="h2" gutterBottom color={"black"} marginLeft={"110px"}>
           Login
         </Typography>
         <form onSubmit={handleLogin}>
@@ -73,7 +73,7 @@ const Login = ({ onLogin }) => {
           <Button
             type="submit"
             variant="contained"
-            color="primary"
+            color="secondary"
             fullWidth
             disabled={loading}
             sx={{ mt: 2 }}

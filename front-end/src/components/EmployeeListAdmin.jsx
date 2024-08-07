@@ -48,8 +48,8 @@ const EmployeeListAdmin = () => {
           <TableRow>
             <TableCell>Name</TableCell>
             <TableCell>Email</TableCell>
-            <TableCell>Password</TableCell>
-            <TableCell>Position</TableCell>
+           
+            <TableCell>Designation</TableCell>
             <TableCell>Salary</TableCell>
             <TableCell>Actions</TableCell>
           </TableRow>
@@ -59,14 +59,14 @@ const EmployeeListAdmin = () => {
             <TableRow key={employee._id}>
               <TableCell>{employee.name}</TableCell>
               <TableCell>{employee.email}</TableCell>
-              <TableCell>{employee.password}</TableCell>
-              <TableCell>{employee.position}</TableCell>
+         
+              <TableCell>{employee.designation}</TableCell>
               <TableCell>{employee.salary}</TableCell>
               <TableCell>
-                <Button component={Link} to={`/employee-form/${employee._id}`} variant="outlined" color="primary"> {/* Added backticks around the template literal */}
+                <Button component={Link} to={`/employee-form/${employee._id}`} variant="outlined" color="secondary"> {/* Added backticks around the template literal */}
                   Update
                 </Button>
-                <Button onClick={() => handleDeleteEmployee(employee._id)} variant="outlined" color="secondary" sx={{ marginLeft: 1 }}>
+                <Button onClick={() => handleDeleteEmployee(employee._id)} variant="outlined" color="primary" sx={{ marginLeft: 1 }}>
                   Delete
                 </Button>
               </TableCell>

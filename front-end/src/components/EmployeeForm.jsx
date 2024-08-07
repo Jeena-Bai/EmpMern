@@ -53,7 +53,7 @@ function EmployeeForm() {
         <>
         <AdminNavbar/>
         <Container maxWidth="md">
-            <Box sx={{ marginTop: 4 }}>
+            <Box sx={{ marginTop: 4 }} >
                 <Typography variant="h4" gutterBottom>{id ? 'Update Employee' : 'Add New Employee'}</Typography>
                 <form onSubmit={handleSubmit}>
                     <TextField
@@ -101,7 +101,7 @@ function EmployeeForm() {
                         fullWidth
                         margin="normal"
                     />
-                    <Button type="submit" variant="contained" color="primary" sx={{ marginTop: 2 }}>
+                    <Button type="submit" variant="contained" color="secondary" sx={{ marginTop: 2 }}>
                         {id ? 'Update Employee' : 'Add Employee'}
                     </Button>
                 </form>

@@ -22,7 +22,7 @@ const AdminNavbar = () => {
   };
   return (
     <>
-    <AppBar position="static">
+    <AppBar position="static" color="secondary">
       <Container>
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
